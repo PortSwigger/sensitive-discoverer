@@ -80,5 +80,14 @@
       "!username@domain.com\\",
       "!@domain.com"
     ]
-  }
+  },
+{
+  "active": true,
+  "description": "JSON key value is a password",
+  "regex": "\"password\"\\s*:\\s*\"[^\"]*\"",
+  "tests": [
+    "{\"password\":\"hunter2\"}",
+    "{\"password\" : \"S3cr3t!\"}"
+  ]
+}
 ]
